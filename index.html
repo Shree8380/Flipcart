@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="container " style="background-color: rgb(212, 212, 212)">
+    <!-- nav bar start -->
+
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top">
+      <div class="container-fluid sticky-top">
+        <img src="flip-kart.png" class="mb-2  ms-5 mx-2" style="height: 30px;margin-left: 140px;margin-right: 30px; " />
+        <form class="d-flex" role="search" style="width: 850px">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-light ms-2 " id="loginBtn" type="submit" style=" color: blue;">
+            Login
+          </button>
+
+
+<div id="loginModal" class="modal">
+  <div class="modal-content" style="width: 40%;">
+    <span class="close" id="loginClose">&times;</span>
+    <div class="row" >
+        <div class="col">
+        <img id="log" src="login-img.png" alt="">  
+        </div>
+        <div class="col">
+    <h2 style="text-align: center;">Login</h2>
+    <form id="loginForm">
+      <label for="username" style="margin-top: 20%;"><b>Username:</b></label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password" style="margin-top: 6%;margin-left: 1.5%;"><b>Password:</b></label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit" style="margin-left: 40%;margin-top: 5%;">Login</button>
+    </form>
+    <p style="margin-top: 110%;">Don't have an account? <a href="#" id="signupLink">Sign Up</a></p>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+        </form>
+        <a class="navbar-brand ms-5" href="#">Become a Scaller</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <img src="cart.png" class="" style="height: 40px" /><a href="" class="mt-2 me-5"
+              style="text-decoration: none; color: black">cart</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav bar end -->
+
+    <!-- phase 1 start-->
+    <div class="container-fluid" style="background-color: white; height: 100%; width: 100%">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="imgp1.png" style="height: 85px; width: 80px" class="img-fluid" /><a href=""
+              class="ms-3">Grocery</a>
+          </div>
+          <div class="col">
+            <img src="imgp2.png" style="height: 85px; width: 80px" class="img-fluid" /><a href=""
+              class="ms-3">Grocery</a>
+          </div>
+          <div class="col">
+            <img src="imgp3.png" style="height: 85px; width: 80px" class="img-fluid" /><a href=""
+              class="ms-3">Grocery</a>
+          </div>
+          <div class="col">
+            <img src="imgp4.png" style="height: 85px; width: 80px" class="img-fluid" /><a href=""
+              class="ms-3">Grocery</a>
+          </div>
+          <div class="col">
+            <img src="imgp5.png" style="height: 85px; width: 80px" class="img-fluid" /><a href=""
+              class="ms-3">Grocery</a>
+          </div>
+          <div class="col">
+            <img src="imgp6.png" style="height: 85px; width: 80px" class="img-fluid" /><a href=""
+              class="ms-3">Grocery</a>
+          </div>
+          <div class="col">
+            <img src="imgp7.png" style="height: 85px; width: 80px" class="img-fluid" /><a href=""
+              class="ms-3">Grocery</a>
+          </div>
+          <div class="col">
+            <img src="imgp8.png" style="height: 85px; width: 80px" class="img-fluid" /><a href=""
+              class="ms-3">Grocery</a>
+          </div>
+          <div class="col">
+            <img src="imggp10.png" style="height: 85px; width: 80px" class="img-fluid" /><a href=""
+              class="ms-3">Grocery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- phase 1 end-->
+
+    <!-- phase 2 start-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="400">
+          <img src="p31.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="p32.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="p33.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- phase 2 end-->
+
+    <!-- phase 3 start-->
+    <div class="container-fluid d-flex" style="
+          background-color: white;
+          height: 100%;
+          width: 98.1%;
+          margin-top: 1%;
+        ">
+      <div class="container" style="height: 40%; width: 30%">
+        <img src="phase4(1).png" class="img-fluid" alt="" />
+      </div>
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-sm">
+            <img src="phase5-2.png" style="height: 90%; width: 90%" class="img-fluid" /><a href=""
+              style="text-decoration: none; margin-left: 30%; color: black">Pen-Box</a>
+            <p style="
+                  color: rgb(38, 142, 31);
+                  margin-left: 30%;
+                  margin-top: 5%;">
+              From $20
+            <p style="
+                  color: rgb(141, 139, 139);
+                  margin-left: 20%;
+                  margin-top: -5%;
+                ">
+              Saving Up To $10
+            </p>
+          </div>
+          <div class="col">
+            <img src="phase4b(1).png" style="height: 90%; width: 90%" class="img-fluid" /><a href=""
+              style="text-decoration: none; margin-left: 30%; color: black">TV</a>
+            <p style="
+                  color: rgb(38, 142, 31);
+                  margin-left: 30%;
+                  margin-top: 5%;
+                ">
+              From $20
+            </p>
+            <p style="
+                  color: rgb(141, 139, 139);
+                  margin-left: 20%;
+                  margin-top: -5%;
+                ">
+              Saving Up To $10
+            </p>
+          </div>
+          <div class="col">
+            <img src="phase4b2.png" style="height: 90%; width: 90%" class="img-fluid" /><a href=""
+              style="text-decoration: none; margin-left: 30%; color: black">Dryer</a>
+            <p style="
+                  color: rgb(38, 142, 31);
+                  margin-left: 30%;
+                  margin-top: 5%;
+                ">
+              From $20
+            </p>
+            <p style="
+                  color: rgb(141, 139, 139);
+                  margin-left: 20%;
+                  margin-top: -5%;
+                ">
+              Saving Up To $10
+            </p>
+          </div>
+          <div class="col">
+            <img src="phase4b3.png" style="height: 90%; width: 90%" class="img-fluid" /><a href=""
+              style="text-decoration: none; margin-left: 30%; color: black">OTG</a>
+            <p style="
+                  color: rgb(38, 142, 31);
+                  margin-left: 30%;
+                  margin-top: 5%;
+                ">
+              From $20
+            </p>
+            <p style="
+                  color: rgb(141, 139, 139);
+                  margin-left: 20%;
+                  margin-top: -5%;
+                ">
+              Saving Up To $10
+            </p>
+          </div>
+          <div class="col">
+            <img src="phase4b4.png" style="height: 90%; width: 90%" class="img-fluid" /><a href=""
+              style="text-decoration: none; margin-left: 30%; color: black">Printer</a>
+            <p style="
+                  color: rgb(38, 142, 31);
+                  margin-left: 30%;
+                  margin-top: 5%;
+                ">
+              From $20
+            </p>
+            <p style="
+                  color: rgb(141, 139, 139);
+                  margin-left: 20%;
+                  margin-top: -5%;
+                ">
+              Saving Up To $10
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- phase 3 end-->
+
+    <!-- phase 4 start-->
+    <div class="container-fluid d-flex" style="
+          background-color: white;
+          height: 100%;
+          width: 98.1%;
+          margin-top: 1%;
+        ">
+      <div class="container" style="height: 40%; width: 30%">
+        <img src="phase4(1).png" class="img-fluid" alt="" />
+      </div>
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col">
+            <img src="phase5-2.png" style="height: 90%; width: 90%" class="img-fluid" /><a href="pen-box.html"
+              style="text-decoration: none; margin-left: 30%; color: black">Pen-Box</a>
+            <p style="
+                  color: rgb(38, 142, 31);
+                  margin-left: 30%;
+                  margin-top: 5%;
+                ">
+              From $20
+            </p>
+            <p style="
+                  color: rgb(141, 139, 139);
+                  margin-left: 20%;
+                  margin-top: -5%;
+                ">
+              Saving Up To $10
+            </p>
+          </div>
+          <div class="col">
+            <img src="phase4b(1).png" style="height: 90%; width: 90%" class="img-fluid" /><a href=""
+              style="text-decoration: none; margin-left: 30%; color: black">TV</a>
+            <p style="
+                  color: rgb(38, 142, 31);
+                  margin-left: 30%;
+                  margin-top: 5%;
+                ">
+              From $20
+            </p>
+            <p style="
+                  color: rgb(141, 139, 139);
+                  margin-left: 20%;
+                  margin-top: -5%;
+                ">
+              Saving Up To $10
+            </p>
+          </div>
+          <div class="col">
+            <img src="phase4b2.png" style="height: 90%; width: 90%" class="img-fluid" /><a href=""
+              style="text-decoration: none; margin-left: 30%; color: black">Dryer</a>
+            <p style="
+                  color: rgb(38, 142, 31);
+                  margin-left: 30%;
+                  margin-top: 5%;
+                ">
+              From $20
+            </p>
+            <p style="
+                  color: rgb(141, 139, 139);
+                  margin-left: 20%;
+                  margin-top: -5%;
+                ">
+              Saving Up To $10
+            </p>
+          </div>
+          <div class="col">
+            <img src="phase4b3.png" style="height: 90%; width: 90%" class="img-fluid" /><a href=""
+              style="text-decoration: none; margin-left: 30%; color: black">OTG</a>
+            <p style=" color: rgb(38, 142, 31);margin-left: 30%;margin-top: 5%;">
+              From $20
+            </p>
+            <p style=" color: rgb(141, 139, 139);margin-left: 20%;margin-top: -5%;">
+              Saving Up To $10
+            </p>
+          </div>
+          <div class="col">
+            <img src="phase4b4.png" style="height: 90%; width: 90%" class="img-fluid" /><a href=""
+              style="text-decoration: none; margin-left: 30%; color: black">Printer</a>
+            <p style="
+                  color: rgb(38, 142, 31);
+                  margin-left: 30%;
+                  margin-top: 5%;
+                ">
+              From $20
+            </p>
+            <p style="
+                  color: rgb(141, 139, 139);
+                  margin-left: 20%;
+                  margin-top: -5%;
+                ">
+              Saving Up To $10
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- phase 4 end-->
+
+    <!-- phase 5 start-->
+    <!-- phase 5 end-->
+
+    <!-- phase 1 start-->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid my-5">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start text-white" style="background-color: #151923">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Company name
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p>
+                  <a class="text-white">MDBootstrap</a>
+                </p>
+                <p>
+                  <a class="text-white">MDWordPress</a>
+                </p>
+                <p>
+                  <a class="text-white">BrandFlow</a>
+                </p>
+                <p>
+                  <a class="text-white">Bootstrap Angular</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Useful links
+                </h6>
+                <p>
+                  <a class="text-white">Your Account</a>
+                </p>
+                <p>
+                  <a class="text-white">Become an Affiliate</a>
+                </p>
+                <p>
+                  <a class="text-white">Shipping Rates</a>
+                </p>
+                <p>
+                  <a class="text-white">Help</a>
+                </p>
+              </div>
+
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+
+          <hr class="my-3" />
+
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2020 Copyright:
+                  <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                    class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                    class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                    class="fab fa-instagram"></i></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- phase 1 end-->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+  </div>
+
+  
+</body>
+
+</html>

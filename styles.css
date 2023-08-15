@@ -1,0 +1,56 @@
+/* Add your CSS styles here */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #log
+  {
+    height: 100%;
+    width: 100%;
+  }
+  .modal-content {
+    background-color: #fff;
+    margin: 6% auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 20%;
+    position: relative;
+    height: 76.5%;
+    width: 50%;
+  }
+  
+  
+  .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  
+  }
+  
+  /* form { */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
